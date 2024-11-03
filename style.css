@@ -1,0 +1,141 @@
+/* Reset de márgenes y rellenos */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globales */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;/* Fondo negro para contrastar */
+    color: aliceblue;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2); /* Fondo semitransparente */
+    z-index: 2;
+}
+
+header .menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 100px;
+}
+
+header .menu li a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+header .menu li a:hover {
+    color: #ddd; /* Efecto hover */
+}
+
+header .logo h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+/* Video de presentación */
+.Video_muestra {
+    overflow: hidden;
+    z-index: 1;
+}
+
+.presentacion_video {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+/* Sección de venta de productos */
+.titulo_venta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: aliceblue;
+    padding: 50px 20px;
+    position: relative;
+    z-index: 2;
+    margin-top: 170px;
+    margin-bottom: 170px;
+    
+}
+
+.titulo_venta h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.titulo_venta h3 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.tienda_btn {
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 15px;
+    background-color: #333;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tienda_btn:hover {
+    background-color: #555;
+}
+
+/* Imagen de portada */
+.presentacion_portada {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 50px 50px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    padding-left: 50px;
+}
+
+.presentacion_portada img {
+    max-width: 100%;
+    height: auto;
+}
+/* Media queries para responsive design */
+@media (max-width: 768px) {
+    header .menu {
+        gap: 20px;
+    }
+
+    .titulo_venta h1 {
+        font-size: 1.5rem;
+    }
+
+    .titulo_venta h3 {
+        font-size: 1rem;
+    }
+
+    .tienda_btn {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
